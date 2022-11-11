@@ -6,7 +6,7 @@ const opt = {
 const getData = (result) => {
     for(const field in result){
         if(document.querySelector('#'+field)){
-            document.querySelector('#'+field).value = [Number(result[field]).toFixed(2)]
+            document.querySelector('#'+field).value = `R$ ${[Number(result[field]).toFixed(2)]}`
         }
     }
 }
@@ -25,7 +25,7 @@ function update() {
 
 fetch('https://economia.awesomeapi.com.br/json/list/USD-BRL/1', opt)
 .then( response => response.json())
-.then( data => document.querySelector('#bid').value = [Number(data[0].bid).toFixed(2)]) 
+.then( data => document.querySelector('#bid').value = `R$ ${[Number(data[0].bid).toFixed(2)]}`) 
 .catch( err => console.log('Erro: ' + err.message))
 //{
 //    insBuy.innerHTML = `<h1><strong>R$ ${Number(data.ticker.buy).toFixed(2)}`
