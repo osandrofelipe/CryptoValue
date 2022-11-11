@@ -27,22 +27,3 @@ fetch('https://economia.awesomeapi.com.br/json/list/USD-BRL/1', opt)
 .then( response => response.json())
 .then( data => document.querySelector('#bid').value = `R$ ${[Number(data[0].bid).toFixed(2)]}`) 
 .catch( err => console.log('Erro: ' + err.message))
-//{
-//    insBuy.innerHTML = `<h1><strong>R$ ${Number(data.ticker.buy).toFixed(2)}`
-//getData("Buy: " + Number(data.ticker.buy).toFixed(2))& console.log("Sell: " + Number(data.ticker.sell).toFixed(2)) 
-//}
-
-
-//let select = document.querySelector('#coin')
-//const opText = select.options[select.selectedIndex].value
-//select.addEventListener("", e => {
-//var searchV = select.options[select.selectedIndex].value //select.value
-//var searchT = select.options[select.selectedIndex].text   
-
-   
-//console.log(" valor " + searchV)
-//console.log(" texto " + searchT)
-    //console.log(select.value)
-//})
-
-//console.log(select)
