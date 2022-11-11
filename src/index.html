@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/src/js/main.js" defer></script>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Crypto Value</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container">
+            <div class="row header">
+                <div class="col-xs-12"> <h1>HEADER</h1></div>
+                <div class="left-col col-md-2">
+                    <select id="coin" onchange="update()" class="form-select" aria-label="Default select example">
+                        <option selected value="">Select crypto</option>
+                        <option value="btc">BTC</option>
+                        <option value="eth">ETH</option>
+                        <option value="usdc">USDT</option>
+                      </select>
+                </div>
+                <div class="main col-md-8">
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-text" id="inputGroup-sizing-lg">Buy</span>
+                        <input type="text" id="buy" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                      </div>
+                      <div> &nbsp;</div>
+                      <div class="input-group input-group-lg">
+                        <span class="input-group-text" id="inputGroup-sizing-lg">Sell</span>
+                        <input type="text" id="sell" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                      </div>
+                </div>
+                <div class="right-col col-md-2">
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-text" id="inputGroup-sizing-lg">Dollar</span>
+                        <input type="text" id="bid" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                      </div>
+                </div>
+            </div>
+            <div class="row footer">
+                <div class="col-xs-12"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
